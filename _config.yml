@@ -2,7 +2,7 @@ title: Code IT - El evento para desarrolladores de Intermark IT
 description: > # this means to ignore newlines until "baseurl:"
   Your description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://code-it-es.github.io" # the base hostname & protocol for your site
+url: "https://code-it-intermark.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
