@@ -1,0 +1,12 @@
+---
+title: Nombre
+name: nombre-3
+subtitle: Posición
+layout: default
+modal-id: 1
+img: TBD.jpg
+thumbnail: TBD.jpg
+alt: Imagen TBD
+topic: Tema
+description: Información 3
+---

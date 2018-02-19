@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include default_data/head.html %}
+
+
+    <body id="page-top" class="index" ondragstart="return false;" ondrop="return false;">
+
+    {% include default_data/header-home.html %}
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Título<br></div>
+                <div class="intro-lead-in">Fecha</div>
+                <div class="intro-lead-in">Lugar</div>
+                <a href="#intro" class="page-scroll btn btn-xl">Quiero saber más</a>
+            </div>
+        </div>
+    </header>
+
+    {% include default_data/intro.html %}
+    {% include default_data/speakers.html %}
+    {% include default_data/about.html %}
+    {% include default_data/sponsors.html %}
+    {% include default_data/contact.html %}
+    {% include default_data/footer.html %}
+    {% include default_data/speakers_info.html %}
+    {% include default_data/js.html %}
+
+    </body>
+</html>

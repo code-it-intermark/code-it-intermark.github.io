@@ -1,35 +1,37 @@
 title: Code IT - El evento para desarrolladores de Intermark IT
-description: > # this means to ignore newlines until "baseurl:"
-  Your description
+description: Evento organizado por Intermark IT para desarrolladores
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://code-it-intermark.github.io" # the base hostname & protocol for your site
+url: "https://code-it.es" # the base hostname & protocol for your site
+author: Intermark IT
+
 # Build settings
 markdown: kramdown
+permalink: pretty
+lang: es_ES
 
-facebook:
-  app_id: 
-
-logo: "../css/2016_style/img/icon-large.png"
-
-social: 
-  name: Your Facebook Page
-  link: "https://www.facebook.com/"
-
-google_site_verification: googleXXXXXXXXXXXXXXXX.html
-
-include: ['_2016_pages', '_2017_pages']
+include: ['_20XX_pages', '_2018_pages']
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+facebook:
+  app_id: 
+
+logo: "../css/default_style/img/icon-large.png"
+
+social: 
+  name: Intermark IT
+  links: 
+    - https://twitter.com/intermark_it
+    - https://es.linkedin.com/company/grupo-intermark
+
+google_site_verification: J9W0bDDuFUaRLINS4kQHU19Z5JQBsrDdfxJ8F84B7Fo
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: facebook
-    url: https://www.facebook.com
   - title: twitter
-    url: https://twitter.com
+    url: https://twitter.com/intermark_it
+  - title: linkedin
+    url: https://es.linkedin.com/company/grupo-intermark
 
-# Build settings
-markdown: kramdown
-permalink: pretty

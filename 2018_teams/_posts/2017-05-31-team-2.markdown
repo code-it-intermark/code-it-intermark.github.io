@@ -1,0 +1,10 @@
+---
+title: Nombre
+name: nombre-2
+subtitle: Posición
+layout: 2018_default
+img: TBD.jpg
+thumbnail: TBD.jpg
+alt: Imagen TBD
+description: Información 2
+---

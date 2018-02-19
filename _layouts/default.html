@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+    {% capture criticalcss %}
+      {% include /default_css/critical.scss %}
+    {% endcapture %}
+    {{ criticalcss | scssify }}
+  </style>
+  
+  {% include /default_data/js.html %}
+  {% include /default_data/head.html %}
+
+  <body ondragstart="return false;" ondrop="return false;">
+    {% include /default_data/header.html %}
+        {{ content }}
+  </body>
+  {% include /default_data/footer.html %}
+</html>
