@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% include /default_data/head.html %}
+    <body ondragstart="return false;" ondrop="return false;">
+      {% include /default_data/header.html %}
+      <!-- Post Section -->
+      <section id="post">
+        <div class="container">
+            <div class="row">
+              {{ content }}
+              {% if site.disqus.shortname %}
+                {% include /default_data/disqus_comments.html %}
+              {% endif %}
+            </div>
+        </div>
+      </section>
+      {% include /default_data/footer.html %}
+      {% include /default_data/js.html %}
+    </body>
+</html>

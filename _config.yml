@@ -9,7 +9,7 @@ markdown: kramdown
 permalink: pretty
 lang: es_ES
 
-include: ['_20XX_pages', '_2018_pages']
+include: ['_2018_pages'] # ['_20XX_pages', '_2018_pages']
 
 plugins:
   - jekyll-sitemap
@@ -35,3 +35,18 @@ social:
   - title: linkedin
     url: https://es.linkedin.com/company/grupo-intermark
 
+google_analytics: UA-XXXXXXXX-1
+
+contact:
+  email: codeit@intermarkit.es
+  subject: Code IT - Contacta con nosotros
+
+register:
+  email: codeit@intermarkit.es
+  subject: Code IT - Registro de usuario al evento
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: codeit
