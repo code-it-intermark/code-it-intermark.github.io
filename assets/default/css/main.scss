@@ -1,0 +1,18 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+$baseurl: '{{ site.baseurl }}';
+
+$template-color-primary: {{ site.data.template.color.primary }};
+$template-color-secondary: {{ site.data.template.color.secondary }};
+$template-color-secondary-dark: {{ site.data.template.color.secondary-dark }};
+$template-color-muted: {{ site.data.template.color.muted }};
+
+$template-font-primary: {{ site.data.template.font.primary }};
+$template-font-secondary: {{ site.data.template.font.secondary }};
+
+@import
+  "main/bootstrap",
+  "main/agency"
+;

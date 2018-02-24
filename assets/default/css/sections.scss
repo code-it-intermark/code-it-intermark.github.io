@@ -1,0 +1,13 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+@import
+  "sections/more",
+  "sections/404",
+  "sections/agenda",
+  "sections/team",
+  "sections/event",
+  "sections/about",
+  "sections/form"
+;

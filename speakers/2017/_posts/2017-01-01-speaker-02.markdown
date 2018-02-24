@@ -1,0 +1,13 @@
+---
+title: Nombre
+name: nombre-2
+subtitle: Posición
+layout: default
+categories: speakers_2017
+modal-id: 1
+img: TBD.jpg
+thumbnail: TBD.jpg
+alt: Imagen TBD
+topic: Tema
+description: Información 2
+---
