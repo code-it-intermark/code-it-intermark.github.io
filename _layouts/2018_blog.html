@@ -6,44 +6,9 @@
       <!-- Post Section -->
       <section id="post">
         <div class="container">
-            <div class="row">
-              {% assign _posts = site.posts | where:"category", "blog" | sort: 'date' | reverse %}
-                {% if page.content != "" %}
-                  <div>{{ content }}</div>
-                {% endif %}
-                <!-- Posts List -->
-                <ul>
-                {% for _post in _posts %}
-                  <li>
-                    <a href="{{ _post.url | relative_url }}">{{ _post.title }}</a>
-                    <p>
-                      <span>{% if _post.author %}{{ _post.author }} | {% endif %}</span>
-                      <span>
-                        {% assign m = _post.date | date: "%-m" %}
-                        {{ _post.date | date: "%-d" }}
-                        {% case m %}
-                          {% when '1' %}Enero
-                          {% when '2' %}Febrero
-                          {% when '3' %}Marzo
-                          {% when '4' %}Abril
-                          {% when '5' %}Mayo
-                          {% when '6' %}Junio
-                          {% when '7' %}Julio
-                          {% when '8' %}Agosto
-                          {% when '9' %}Septiembre
-                          {% when '10' %}Octubre
-                          {% when '11' %}Noviembre
-                          {% when '12' %}Diciembre
-                        {% endcase %}
-                        {{ _post.date | date: "%Y" }}                        
-                      </span>
-                    </p>
-                    <p>{{ _post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
-                    <a href="{{ _post.url | relative_url }}">Leer más</a>
-                  </li>
-                {% endfor %}
-                </ul>
-            </div>
+          <div class="row">
+            {{ content }}
+          </div>
         </div>
       </section>
       {% include /default/footer.html %}
