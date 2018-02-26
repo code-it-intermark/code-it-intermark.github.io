@@ -38,7 +38,7 @@
                         {{ _post.date | date: "%Y" }}                        
                       </span>
                     </p>
-                    <p>{{ _post.excerpt | strip_html }}</p>
+                    <p>{{ _post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
                     <a href="{{ _post.url | relative_url }}">Leer más</a>
                   </li>
                 {% endfor %}
