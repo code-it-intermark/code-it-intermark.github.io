@@ -24,6 +24,8 @@ From [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdow
 [Line Breaks](#lines)  
 [Youtube videos](#videos)  
 
+<!-- more -->
+
 <a name="headers"/>
 ## Headers
 

@@ -8,6 +8,7 @@ author: Intermark IT
 markdown: kramdown
 permalink: pretty
 lang: es_ES
+excerpt_separator: "<!-- more -->"
 
 include: ['_pages']
 
