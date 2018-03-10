@@ -1,0 +1,40 @@
+<section id="joinin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading border-right">Si quieres aprender y pasar un día en un ambiente tecnológico no olvides <strong>apuntarte</strong>.</h2>
+            </div>
+        </div>
+        <div class="row form-row rounded-botright rounded-topleft rounded-botleft border-right rounded-botright">
+            <div class="flowRight rounded-botright diamond-empty-botleft border-bot border-right border-left arrow-lefttop"></div>
+            <div class="col-lg-12">
+                <form class="" name="sentMessage" id="joininForm" action="https://formspree.io/{{ site.contact.email }}" method="POST" novalidate>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <input type="hidden" name="_subject" value="{{ site.contact.subject }}" />
+                            <input type="hidden" name="_language" value="es" />
+                            <div class="control-group form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor, intrduce tu nombre.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="control-group form-group">
+                                <input type="email" class="form-control" name="_replyto" placeholder="E-mail *" id="email" required data-validation-required-message="Por favor, introduce tu dirección de e-mail.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="control-group form-group">
+                                <div id="success"></div>
+                                <button type="submit" value="Enviar" class="btn btn-xl btn-joinin">Apúntame</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
