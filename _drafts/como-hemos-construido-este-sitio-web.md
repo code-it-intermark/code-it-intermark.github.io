@@ -5,7 +5,7 @@ excerpt: Te explicamos que herramientas hemos utilizado y que pasos hemos seguid
 featured-img: github-ninja.jpg
 date: 2018-03-11 18:01:00 +0100
 category: blog
-tags: ['2018', 'jekyll', 'github']
+tags: ['2018', 'jekyll', 'github', 'cloudflare']
 author: miguelangelvilaf
 comments: true
 ---
