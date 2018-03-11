@@ -1,7 +1,7 @@
 ---
 layout: 2018_post
 title: Arranca Code IT - Año 0
-excerpt: Bienvenidos al Code IT
+excerpt: Bienvenidos al Code IT, el encuentro entre desarrolladores dedicado a compartir conocimientos, aprender y pasar un día en un ambiente tecnológico.
 featured-img: code-it.png
 date: 2018-03-11 11:51:00 +0100
 category: blog
