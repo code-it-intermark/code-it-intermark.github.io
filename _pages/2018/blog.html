@@ -7,9 +7,15 @@ permalink: /blog/index
     <ul>
     {% for _post in _posts %}
     <li>
-        <a href="{{ _post.url | relative_url }}">{{ _post.title }}</a>
+        <h2><a href="{{ _post.url | relative_url }}">{{ _post.title }}</a></h2>
+        {% if _post.featured-img %}
+            <img src="/assets/2018/img/posts/{{ _post.featured-img }}" width="100%" />
+        {% endif %}
         <p>
-        <span>{% if _post.author %}{{ _post.author }} | {% endif %}</span>
+        {% if _post.author %}
+            {% assign author = site.data.authors[_post.author] %}
+            <span>{% avatar {{_post.author}} size=50 %} {{ author.name }} | </span>
+        {% endif %}
         <span>
             {% assign m = _post.date | date: "%-m" %}
             {{ _post.date | date: "%-d" }}
@@ -29,6 +35,11 @@ permalink: /blog/index
             {% endcase %}
             {{ _post.date | date: "%Y" }}                        
         </span>
+        </p>
+        <p class="tags">
+            {% for _tag in _post.tags %}
+                <span>{{ _tag }}</span>
+            {% endfor %}            
         </p>
         <p>{{ _post.excerpt | strip_html | truncatewords: 100 }}</p>
         <a href="{{ _post.url | relative_url }}">Leer más</a>

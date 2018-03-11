@@ -18,6 +18,8 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-redirect-from
 
 facebook:
   app_id: 

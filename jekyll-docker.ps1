@@ -1,1 +1,1 @@
-docker run --rm --volume="$PWD":/srv/jekyll -p 4000:4000 -it jekyll/jekyll jekyll serve --force_polling
+docker run --rm -e "JEKYLL_ENV=docker" --volume="$PWD":/srv/jekyll -p 4000:4000 -it jekyll/jekyll jekyll serve --config  _config.yml,_config.docker.yml --force_polling --drafts
