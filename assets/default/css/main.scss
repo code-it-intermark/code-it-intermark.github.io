@@ -115,9 +115,9 @@ body{
   }
 }
 
-/***********************************************************  INTRO **************************************************/
+/***********************************************************  INFO  **************************************************/
 
-#intro{
+#info{
   padding: 0 !important;
 
   .section-heading{
@@ -223,9 +223,9 @@ body{
 }
 
 
-/***********************************************************  AGENDA / ABOUT  ********************************************/
+/***********************************************************  AGENDA  ********************************************/
 
-#about{
+#agenda{
     padding: 0;
 
     .container{
@@ -406,7 +406,7 @@ footer{
 
 /** FLOWS **/
 
-#intro .title .flow{
+#info .title .flow{
   position: absolute;
   top: 21px;
   left: 0;
@@ -415,7 +415,7 @@ footer{
   z-index: 0;
 }
 
-#intro #deco .flowLeft{
+#info #deco .flowLeft{
     position: absolute;
     bottom: 50%;
     left: 200px;
@@ -423,7 +423,7 @@ footer{
     height: 270px;
 }
 
-#intro #deco .flowRight{
+#info #deco .flowRight{
     position: absolute;
     bottom: 50%;
     right: 200px;
@@ -431,7 +431,7 @@ footer{
     height: 270px;
 }
 
-#intro #deco .flowBot{
+#info #deco .flowBot{
     position: absolute;
     bottom: -4px;
     left: 70%;
@@ -443,7 +443,7 @@ footer{
 
 
 
-#about .flowRight{
+#agenda .flowRight{
     width: 40%;
     height: 100%;
     position: absolute;
@@ -452,7 +452,7 @@ footer{
     z-index: 0;
 }
 
-#about .flowLeft{
+#agenda .flowLeft{
     width: 150px;
     height: 175px;
     position: absolute;
