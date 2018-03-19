@@ -27,7 +27,22 @@ $color_highlight: #002856;
 
 body{
     padding: 0 !important;
+    background-color: #fff !important;
 }
+
+.page-not-found.venue-top{
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 15px 0 15px;
+    h1{
+        padding-top: 0 !important;
+        margin-bottom: 40px;
+    }
+}
+
 
 .section-heading{
   text-transform: none;
@@ -61,6 +76,11 @@ body{
         .nav li a{
             color: #fff;
         }
+    }
+
+    .navbar-header > h1{
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -401,24 +421,28 @@ footer{
 
 
 
-
-
-
-/** FLOWS **/
+/***************************************/
+/***************************************/
+/***************************************/
+//************** FLOWS *****************/
+/***************************************/
+/***************************************/
+/***************************************/
 
 #info .title .flow{
-  position: absolute;
-  top: 21px;
-  left: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 8vw;
+    height: 100%;
+    z-index: 0;
+    min-width: 50px;
 }
 
 #info #deco .flowLeft{
     position: absolute;
     bottom: 50%;
-    left: 200px;
+    left: 15%;
     width: 90px;
     height: 270px;
 }
@@ -426,7 +450,7 @@ footer{
 #info #deco .flowRight{
     position: absolute;
     bottom: 50%;
-    right: 200px;
+    right: 15%;
     width: 90px;
     height: 270px;
 }
@@ -453,11 +477,12 @@ footer{
 }
 
 #agenda .flowLeft{
-    width: 150px;
+    width: 7vw;
+    min-width: 50px;
     height: 175px;
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     z-index: 0;
 }
 
@@ -486,6 +511,131 @@ footer{
     bottom: -4px;
     left: -4px;
 }
+
+
+
+
+/*************************************************** MEDIA QUERIES ***************************/
+
+
+@media(max-width:992px) {
+
+    .navbar.navbar-default.navbar-shrink .nav li a{
+        font-size: 12px;
+    }
+
+    section h2.section-heading{
+        padding: 0 75px;
+        font-size: 30px;
+    }
+    
+    #info #deco .flowRight{
+        right: 7%;
+    }
+    #info #deco .flowLeft{
+        left: 7%;
+    }
+
+    .list-inline.social-buttons{
+        margin-top: 20px;
+    }
+
+    .page-not-found.venue-top{
+        min-height: calc(100vh - 230px);
+    }
+}
+
+
+@media(max-width:768px) {
+    section h2.section-heading{
+        font-size: 25px;
+    }
+
+    #info #deco .flowRight,#info #deco .flowLeft{
+        display: none;
+    }
+
+    #info #deco .section-heading{
+        line-height: 1em;
+    }
+
+    /*#info #deco .flowLeft{
+        width: 50px;
+    }*/
+
+    #info .info{
+        padding: 20px 40px 100px 40px;
+    }
+    #info .info .col{
+        width: 100%;
+        padding: 20px 0 0 0;
+        min-height: 160px;
+    }
+
+    #agenda .timeline-wrapper .timeline-line{
+        left: 17px;
+        width: 50px;
+        height: calc( 100% - 50px );
+    }
+
+    #agenda ul.timeline li .timeline-image{
+        transform: none;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .timeline-wrapper ul.timeline > li > .timeline-panel{
+        padding: 0 0px 0 120px;
+    }
+
+    #joininForm{
+        text-align:center;
+    }
+
+    .header .logo{
+        min-height: 300px;
+    }
+
+    .header .dashed-border.dance{
+        height: 130px;
+    }
+
+    .navbar.navbar-default .nav li a{
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** UTIL FLOW **/
@@ -722,4 +872,3 @@ footer{
     top: -10px;
     right: -10px;
 }
-
