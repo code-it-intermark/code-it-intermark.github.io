@@ -9,11 +9,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {% if include.navbar-brand-h1 == "true" %}
-                <h1><a class="navbar-brand page-scroll" href="/">Code IT</a></h1>
-            {% else %}
-                <a class="navbar-brand page-scroll" href="/">Code IT</a>
-            {% endif %}
+            <h1>
+                <a class="navbar-brand page-scroll" href="/">
+                    <div class="wrapper-logos">
+                        <!--<div class="negative"></div>-->
+                        <img class="negative-img" src="/assets/2018/img/logos/navbar_logo_negative.png">
+                        <img class="positive-img" src="/assets/2018/img/logos/navbar_logo.png">
+                    </div>
+                </a>
+            </h1>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

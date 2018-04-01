@@ -6,45 +6,52 @@ permalink: /blog/index
     {% assign _count = _posts | size %}
     {% if _count > 0 %}
         <!-- Posts List -->
-        <ul>
+        <ul class="post-list">
         {% for _post in _posts %}
-            <li>
-                <h2><a href="{{ _post.url | relative_url }}">{{ _post.title }}</a></h2>
-                {% if _post.featured-img %}
-                    <img src="/assets/2018/img/posts/{{ _post.featured-img }}" width="100%" />
-                {% endif %}
-                <p>
-                {% if _post.author %}
-                    {% assign author = site.data.authors[_post.author] %}
-                    <span>{% avatar {{_post.author}} size=50 %} {{ author.name }} | </span>
-                {% endif %}
-                <span>
-                    {% assign m = _post.date | date: "%-m" %}
-                    {{ _post.date | date: "%-d" }}
-                    {% case m %}
-                    {% when '1' %}Enero
-                    {% when '2' %}Febrero
-                    {% when '3' %}Marzo
-                    {% when '4' %}Abril
-                    {% when '5' %}Mayo
-                    {% when '6' %}Junio
-                    {% when '7' %}Julio
-                    {% when '8' %}Agosto
-                    {% when '9' %}Septiembre
-                    {% when '10' %}Octubre
-                    {% when '11' %}Noviembre
-                    {% when '12' %}Diciembre
-                    {% endcase %}
-                    {{ _post.date | date: "%Y" }}                        
-                </span>
-                </p>
-                <p class="tags">
-                    {% for _tag in _post.tags %}
-                        <span>{{ _tag }}</span>
-                    {% endfor %}            
-                </p>
-                <p>{{ _post.excerpt | strip_html | truncatewords: 100 }}</p>
-                <a href="{{ _post.url | relative_url }}">Leer más</a>
+            <li class="post">
+                <div class="post_title">
+                    <h2><a href="{{ _post.url | relative_url }}">{{ _post.title }}</a></h2>
+                    <div class="flowPost border-left border-bot arrow-botright rounded-botleft"></div>
+                </div>
+                <div class="post_body">
+                    {% if _post.featured-img %}
+                        <div class="post_img"><img src="/assets/2018/img/posts/{{ _post.featured-img }}" width="100%" /></div>
+                    {% endif %}
+                    <div class="post_details">
+                        <p class="post_author">
+                            {% if _post.author %}
+                                {% assign author = site.data.authors[_post.author] %}
+                                <span>{% avatar {{_post.author}} size=50 %} {{ author.name }} | </span>
+                            {% endif %}
+                            <span>
+                                {% assign m = _post.date | date: "%-m" %}
+                                {{ _post.date | date: "%-d" }}
+                                {% case m %}
+                                {% when '1' %}Enero
+                                {% when '2' %}Febrero
+                                {% when '3' %}Marzo
+                                {% when '4' %}Abril
+                                {% when '5' %}Mayo
+                                {% when '6' %}Junio
+                                {% when '7' %}Julio
+                                {% when '8' %}Agosto
+                                {% when '9' %}Septiembre
+                                {% when '10' %}Octubre
+                                {% when '11' %}Noviembre
+                                {% when '12' %}Diciembre
+                                {% endcase %}
+                                {{ _post.date | date: "%Y" }}                        
+                            </span>
+                        </p>
+                        <p class="post_tags">
+                            {% for _tag in _post.tags %}
+                                <span>{{ _tag }}</span>
+                            {% endfor %}            
+                        </p>
+                        <p class="post_desc">{{ _post.excerpt | strip_html | truncatewords: 100 }}</p>
+                        <a href="{{ _post.url | relative_url }}">Leer más</a>
+                    </div>
+                </div>
             </li>
         {% endfor %}
         </ul>
